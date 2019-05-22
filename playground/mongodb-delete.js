@@ -26,7 +26,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     // });
 
     // findOneAndDelete
-    db.collection('Users').findOneAndDelete({_id : ObjectID('5ce4e21cd77c5e540a5f200d')}).then((result) => {
+    db.collection('Users').findOneAndDelete({_id :new ObjectID('5ce4e21cd77c5e540a5f200d')}).then((result) => {
         console.log(result);
     },(err) => {
         console.log('unable to find the todo',err);
